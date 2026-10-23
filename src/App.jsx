@@ -14,6 +14,7 @@ function App() {
       <div id='header'>
         <a href="https://birdfuck.com">BIRDFUCK</a>
         <a href="https://hdtgm.com/">HDTGM</a>
+        <a href="https://www.blankcheckpod.com/">BLANKCHECK</a>
       </div>
       <input 
         type="range" 
