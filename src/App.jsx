@@ -35,7 +35,7 @@ function App() {
           </tr>
           <tr>
             <td>Straw Juniors</td>
-            <td>{score}</td>
+            <td>{score.toFixed(2)}</td>
           </tr>
         </tbody>
       </table>
