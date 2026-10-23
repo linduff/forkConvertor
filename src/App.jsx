@@ -1,0 +1,47 @@
+import { useState } from 'react'
+import heroImg from './assets/hero.png'
+import reactLogo from './assets/react.svg'
+import viteLogo from './assets/vite.svg'
+import './App.css'
+
+function App() {
+  const [score, setScore] = useState(0)
+
+  const adjustScore = (e) => {
+    setScore(Number(e.target.value))
+    console.log(score)
+  }
+
+  return (
+    <>
+      <input 
+        type="range" 
+        min="0" 
+        max="20" 
+        step="1"
+        value={score}
+        onChange={adjustScore}
+      />
+      <table>
+        <tbody>
+          <tr>
+            <td>Forks</td>
+            <td>{(score/4).toFixed(2)}</td>
+          </tr>
+          <tr>
+            <td>Fangs</td>
+            <td>{(score/2).toFixed(2)}</td>
+          </tr>
+          <tr>
+            <td>Straw Juniors</td>
+            <td>{score}</td>
+          </tr>
+        </tbody>
+      </table>
+      <a href="https://birdfuck.com">birdfuck.com</a>
+      <a href="https://hdtgm.com/">hdtgm.com</a>
+    </>
+  )
+}
+
+export default App
