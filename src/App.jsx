@@ -1,7 +1,4 @@
 import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
 import './App.css'
 
 function App() {
@@ -14,6 +11,10 @@ function App() {
 
   return (
     <>
+      <div id='header'>
+        <a href="https://birdfuck.com">BIRDFUCK</a>
+        <a href="https://hdtgm.com/">HDTGM</a>
+      </div>
       <input 
         type="range" 
         min="0" 
@@ -38,8 +39,6 @@ function App() {
           </tr>
         </tbody>
       </table>
-      <a href="https://birdfuck.com">birdfuck.com</a>
-      <a href="https://hdtgm.com/">hdtgm.com</a>
     </>
   )
 }
